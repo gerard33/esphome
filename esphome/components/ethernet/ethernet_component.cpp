@@ -3,8 +3,6 @@
 #include "esphome/core/util.h"
 #include "esphome/core/application.h"
 
-#ifdef USE_ESP32_FRAMEWORK_ARDUINO
-
 #include <eth_phy/phy_lan8720.h>
 #include <eth_phy/phy_ip101.h>
 #include <eth_phy/phy_tlk110.h>
@@ -304,5 +302,3 @@ void EthernetComponent::set_use_address(const std::string &use_address) { this->
 
 }  // namespace ethernet
 }  // namespace esphome
-
-#endif  // USE_ESP32_FRAMEWORK_ARDUINO
